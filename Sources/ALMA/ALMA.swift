@@ -9,7 +9,7 @@ public struct ALMA: ALMAProtocol {
 
     // MARK: - Lifecycle
 
-    init() {
+    public init() {
         ALMA.log(
             information: "💪🏻 Armored, sharpened, and raring to go!",
             category: .lifecycle
