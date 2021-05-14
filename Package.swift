@@ -17,12 +17,16 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(name: "AppLogger", url: "https://github.com/backslash-f/applogger", from: "1.0.0")
+        .package(name: "AppLogger", url: "https://github.com/backslash-f/applogger", from: "1.0.0"),
+        .package(name: "CSKScene", url: "https://github.com/backslash-f/cskscene", from: "0.0.1")
     ],
     targets: [
         .target(
             name: "ALMA",
-            dependencies: ["AppLogger"],
+            dependencies: [
+                "AppLogger",
+                "CSKScene"
+            ],
             exclude:["Resources"]
         ),
         .testTarget(
