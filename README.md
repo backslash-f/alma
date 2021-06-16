@@ -8,6 +8,6 @@
 ## Purpose
 Enable developers to make games for the Apple ecosystem without having to recode the core elements along the way.
 
-![High-level overview](https://github.com/backslash-f/alma/blob/49cd83bc7b39d2c3f5ddbbd560e92aa5e25e181d/Resources/ALMA.png)
+![High-level overview](https://github.com/backslash-f/alma/blob/49cd83bc7b39d2c3f5ddbbd560e92aa5e25e181d/ALMA.png)
 
 (PS: a work in progress. 🔨)

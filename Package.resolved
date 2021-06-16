@@ -2,7 +2,7 @@
   "object": {
     "pins": [
       {
-        "package": "AppLogger",
+        "package": "applogger",
         "repositoryURL": "https://github.com/backslash-f/applogger",
         "state": {
           "branch": null,
@@ -11,7 +11,7 @@
         }
       },
       {
-        "package": "CSKScene",
+        "package": "cskscene",
         "repositoryURL": "https://github.com/backslash-f/cskscene",
         "state": {
           "branch": null,
@@ -20,7 +20,16 @@
         }
       },
       {
-        "package": "GCOverseer",
+        "package": "device",
+        "repositoryURL": "https://github.com/backslash-f/device",
+        "state": {
+          "branch": null,
+          "revision": "753ce71d00cf22e410c52543b33ac63d020b0bf8",
+          "version": "1.1.1"
+        }
+      },
+      {
+        "package": "gcoverseer",
         "repositoryURL": "https://github.com/backslash-f/gcoverseer",
         "state": {
           "branch": null,

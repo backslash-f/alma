@@ -1,4 +1,4 @@
-// swift-tools-version:5.4
+// swift-tools-version:5.5
 
 import PackageDescription
 
@@ -28,13 +28,11 @@ let package = Package(
                 "AppLogger",
                 "CSKScene",
                 "Device"
-            ],
-            exclude:["Resources"]
+            ]
         ),
         .testTarget(
             name: "ALMATests",
-            dependencies: ["ALMA"],
-            exclude:["Resources"]
+            dependencies: ["ALMA"]
         )
     ],
     swiftLanguageVersions: [.v5]
