@@ -18,6 +18,7 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "AppLogger", url: "https://github.com/backslash-f/applogger", from: "1.0.0"),
+        .package(name: "CGKStateMachine", url: "https://github.com/backslash-f/cgkstatemachine", from: "0.1.0"),
         .package(name: "CSKScene", url: "https://github.com/backslash-f/cskscene", from: "0.0.1"),
         .package(name: "Device", url: "https://github.com/backslash-f/device", from: "1.0.0")
     ],
@@ -26,6 +27,7 @@ let package = Package(
             name: "ALMA",
             dependencies: [
                 "AppLogger",
+                "CGKStateMachine",
                 "CSKScene",
                 "Device"
             ]
