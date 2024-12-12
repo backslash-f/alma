@@ -9,22 +9,6 @@ public enum ALMALoggingCategory: String {
     case error      = "ALMA_Error"
 }
 
-public extension ALMA {
-
-    // MARK: Enable / Disable Logging
-
-    /// Enables / disables logging information via `AppLogger`.
-    ///
-    /// When logging is enabled, the output will be available in *Xcode's Console* or
-    /// in the *macOS Console app*.
-    ///
-    /// In the **macOS Console app**, you can filter ALMA's output by
-    /// `SUBSYSTEM`: `com.backslash-f.ALMA`.
-    func setLogging(enabled: Bool) {
-        ALMA.isLoggingEnabled = enabled
-    }
-}
-
 // MARK: - Internal
 
 internal extension ALMA {
@@ -34,7 +18,7 @@ internal extension ALMA {
     /// - Parameters:
     ///   - information: The `String` to be logged.
     ///   - category: A member of the `ALMALoggingCategory` enum.
-    static func log(information: String, category: ALMALoggingCategory) {
+    func log(information: String, category: ALMALoggingCategory) {
         guard isLoggingEnabled else {
             return
         }
@@ -43,7 +27,7 @@ internal extension ALMA {
         logger.log(information)
     }
 
-    static func logError(_ error: String) {
+    func logError(_ error: String) {
         log(information: error, category: .error)
     }
 }
